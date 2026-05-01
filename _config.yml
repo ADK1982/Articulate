@@ -1,8 +1,8 @@
 title: Articulate
 description: Online courses to help you grow, learn, and create — at your own pace.
 author: Articulate
-baseurl: "/Articulate"
-url: "https://adk1982.github.io"
+baseurl: ""
+url: "https://amberknapp.com"
 
 markdown: kramdown
 highlighter: rouge
