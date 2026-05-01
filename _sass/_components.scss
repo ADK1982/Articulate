@@ -1,0 +1,249 @@
+// ─── Buttons ──────────────────────────────────────────────────────────────────
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: $radius-md;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all $transition-fast;
+  border: none;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &--primary {
+    background: $accent;
+    color: #fff;
+
+    &:hover {
+      background: lighten($accent, 7%);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px $accent-glow;
+    }
+  }
+
+  &--secondary {
+    background: $bg-elevated;
+    color: $text-primary;
+    border: 1px solid $border-default;
+
+    &:hover {
+      background: $bg-hover;
+      border-color: $border-strong;
+      color: $text-primary;
+    }
+  }
+
+  &--full {
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+}
+
+// ─── Badges ───────────────────────────────────────────────────────────────────
+
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.625rem;
+  border-radius: 100px;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+
+  &--beginner     { background: rgba($success, 0.14); color: $success; }
+  &--intermediate { background: rgba($warning, 0.14); color: $warning; }
+  &--advanced     { background: rgba($danger, 0.14);  color: $danger; }
+}
+
+// ─── Meta items ───────────────────────────────────────────────────────────────
+
+.meta-item {
+  font-size: 0.84rem;
+  color: $text-muted;
+  display: inline-flex;
+  align-items: center;
+
+  &--lesson {
+    margin-top: 0.375rem;
+    display: block;
+  }
+}
+
+// ─── Course Cards ─────────────────────────────────────────────────────────────
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-card {
+  background: $bg-card;
+  border: 1px solid $border-subtle;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  transition: all $transition-base;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    border-color: $border-default;
+    background: $bg-elevated;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.course-card__image {
+  aspect-ratio: 16 / 9;
+  background: $bg-elevated;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform $transition-base;
+  }
+
+  .course-card:hover & img { transform: scale(1.03); }
+}
+
+.course-card__image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, $bg-elevated 0%, $bg-hover 100%);
+}
+
+.course-card__badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+.course-card__body {
+  padding: 1.375rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card__title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: $text-primary;
+  margin-bottom: 0.5rem;
+}
+
+.course-card__excerpt {
+  font-size: 0.9rem;
+  color: $text-secondary;
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.course-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid $border-subtle;
+}
+
+// ─── Lessons List ─────────────────────────────────────────────────────────────
+
+.lessons-list__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $text-muted;
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-item {
+  display: grid;
+  grid-template-columns: 26px 1fr auto;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: $radius-sm;
+  font-size: 0.875rem;
+  color: $text-secondary;
+  transition: all $transition-fast;
+  text-decoration: none;
+  margin-bottom: 2px;
+
+  &:hover {
+    background: $bg-elevated;
+    color: $text-primary;
+  }
+
+  &--active {
+    background: $accent-dim;
+    color: $text-primary;
+
+    .lesson-item__number {
+      background: $accent;
+      color: #fff;
+      border-color: transparent;
+    }
+  }
+}
+
+.lesson-item__number {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid $border-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: $text-muted;
+  flex-shrink: 0;
+  transition: all $transition-fast;
+}
+
+.lesson-item__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.lesson-item__duration {
+  font-size: 0.75rem;
+  color: $text-muted;
+  flex-shrink: 0;
+}
+
+// ─── Empty State ──────────────────────────────────────────────────────────────
+
+.empty-state {
+  text-align: center;
+  padding: 5rem 2rem;
+  grid-column: 1 / -1;
+
+  h3 {
+    font-size: 1.25rem;
+    color: $text-secondary;
+    margin-bottom: 0.5rem;
+  }
+
+  p { color: $text-muted; }
+}

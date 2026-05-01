@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="site-header__logo">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ '/courses/' | relative_url }}"
+         class="nav-link {% if page.url contains '/courses/' %}nav-link--active{% endif %}">
+        Courses
+      </a>
+      <a href="{{ '/about/' | relative_url }}"
+         class="nav-link {% if page.url == '/about/' %}nav-link--active{% endif %}">
+        About
+      </a>
+    </nav>
+  </div>
+</header>

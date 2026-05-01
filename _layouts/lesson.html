@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+{% assign course = site.courses | where: "slug", page.course | first %}
+{% assign course_lessons = site.lessons | where: "course", page.course | sort: "order" %}
+{% assign prev_lesson = nil %}
+{% assign next_lesson = nil %}
+{% for lesson in course_lessons %}
+  {% if lesson.url == page.url %}
+    {% unless forloop.first %}
+      {% assign prev_index = forloop.index0 | minus: 1 %}
+      {% assign prev_lesson = course_lessons[prev_index] %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next_index = forloop.index0 | plus: 1 %}
+      {% assign next_lesson = course_lessons[next_index] %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+<div class="lesson-page">
+  <aside class="lesson-sidebar">
+    <div class="lesson-sidebar__inner">
+      {% if course %}
+        <a href="{{ course.url | relative_url }}" class="lesson-sidebar__back">
+          ← {{ course.title }}
+        </a>
+      {% endif %}
+      <p class="lessons-list__label">Course Content</p>
+      <div class="lessons-list">
+        {% for lesson in course_lessons %}
+          <a href="{{ lesson.url | relative_url }}"
+             class="lesson-item {% if lesson.url == page.url %}lesson-item--active{% endif %}">
+            <span class="lesson-item__number">{{ forloop.index }}</span>
+            <span class="lesson-item__title">{{ lesson.title }}</span>
+            {% if lesson.duration %}
+              <span class="lesson-item__duration">{{ lesson.duration }}</span>
+            {% endif %}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </aside>
+
+  <div class="lesson-main">
+    <div class="lesson-header">
+      <nav class="breadcrumb">
+        <a href="{{ '/courses/' | relative_url }}">Courses</a>
+        <span class="breadcrumb__sep">/</span>
+        {% if course %}
+          <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
+          <span class="breadcrumb__sep">/</span>
+        {% endif %}
+        <span>{{ page.title }}</span>
+      </nav>
+      <h1 class="lesson-title">{{ page.title }}</h1>
+      {% if page.duration %}
+        <span class="meta-item">{{ page.duration }}</span>
+      {% endif %}
+    </div>
+
+    {% if page.video_url %}
+      <div class="video-embed">
+        <iframe
+          src="{{ page.video_url }}"
+          title="{{ page.title }}"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    {% endif %}
+
+    <div class="lesson-content">
+      {{ content }}
+    </div>
+
+    <nav class="lesson-nav">
+      {% if prev_lesson %}
+        <a href="{{ prev_lesson.url | relative_url }}" class="lesson-nav__btn lesson-nav__btn--prev">
+          <span class="lesson-nav__label">Previous</span>
+          <span class="lesson-nav__title">{{ prev_lesson.title }}</span>
+        </a>
+      {% else %}
+        <span></span>
+      {% endif %}
+      {% if next_lesson %}
+        <a href="{{ next_lesson.url | relative_url }}" class="lesson-nav__btn lesson-nav__btn--next">
+          <span class="lesson-nav__label">Next</span>
+          <span class="lesson-nav__title">{{ next_lesson.title }}</span>
+        </a>
+      {% endif %}
+    </nav>
+  </div>
+</div>

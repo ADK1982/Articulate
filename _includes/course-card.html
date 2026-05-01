@@ -1,0 +1,29 @@
+<a href="{{ include.course.url | relative_url }}" class="course-card">
+  <div class="course-card__image">
+    {% if include.course.image %}
+      <img src="{{ include.course.image | relative_url }}" alt="{{ include.course.title }}">
+    {% else %}
+      <div class="course-card__image-placeholder"></div>
+    {% endif %}
+    {% if include.course.level %}
+      <span class="badge badge--{{ include.course.level }} course-card__badge">
+        {{ include.course.level | capitalize }}
+      </span>
+    {% endif %}
+  </div>
+  <div class="course-card__body">
+    <h3 class="course-card__title">{{ include.course.title }}</h3>
+    <p class="course-card__excerpt">
+      {{ include.course.excerpt | default: include.course.description | truncate: 110 }}
+    </p>
+    <div class="course-card__meta">
+      {% if include.course.duration %}
+        <span class="meta-item">{{ include.course.duration }}</span>
+      {% endif %}
+      {% assign lesson_count = site.lessons | where: "course", include.course.slug | size %}
+      {% if lesson_count > 0 %}
+        <span class="meta-item">{{ lesson_count }} lessons</span>
+      {% endif %}
+    </div>
+  </div>
+</a>

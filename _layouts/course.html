@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="course-header">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="{{ '/courses/' | relative_url }}">Courses</a>
+      <span class="breadcrumb__sep">/</span>
+      <span>{{ page.title }}</span>
+    </nav>
+    <div class="course-header__meta">
+      {% if page.level %}
+        <span class="badge badge--{{ page.level }}">{{ page.level | capitalize }}</span>
+      {% endif %}
+      {% if page.duration %}
+        <span class="meta-item">{{ page.duration }}</span>
+      {% endif %}
+      {% assign lesson_count = site.lessons | where: "course", page.slug | size %}
+      {% if lesson_count > 0 %}
+        <span class="meta-item">{{ lesson_count }} lessons</span>
+      {% endif %}
+    </div>
+    <h1 class="course-header__title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="course-header__description">{{ page.description }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container">
+  <div class="course-layout">
+    <div class="course-content">
+      {{ content }}
+    </div>
+    <aside class="course-sidebar">
+      {% assign course_lessons = site.lessons | where: "course", page.slug | sort: "order" %}
+      {% if course_lessons.size > 0 %}
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">Course Content</h3>
+          <div class="lessons-list">
+            {% for lesson in course_lessons %}
+              <a href="{{ lesson.url | relative_url }}" class="lesson-item">
+                <span class="lesson-item__number">{{ forloop.index }}</span>
+                <span class="lesson-item__title">{{ lesson.title }}</span>
+                {% if lesson.duration %}
+                  <span class="lesson-item__duration">{{ lesson.duration }}</span>
+                {% endif %}
+              </a>
+            {% endfor %}
+          </div>
+          <a href="{{ course_lessons.first.url | relative_url }}" class="btn btn--primary btn--full">
+            Start Course
+          </a>
+        </div>
+      {% endif %}
+    </aside>
+  </div>
+</div>

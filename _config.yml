@@ -1,0 +1,45 @@
+title: Articulate
+description: Online courses to help you grow, learn, and create — at your own pace.
+author: Articulate
+baseurl: "/Articulate"
+url: "https://adk1982.github.io"
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+collections:
+  courses:
+    output: true
+    permalink: /courses/:name/
+  lessons:
+    output: true
+    permalink: /courses/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: course
+  - scope:
+      path: ""
+      type: "lessons"
+    values:
+      layout: lesson
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - node_modules/

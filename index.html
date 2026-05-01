@@ -1,0 +1,39 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__eyebrow">Online Learning</span>
+      <h1 class="hero__title">Learn something<br>meaningful today.</h1>
+      <p class="hero__subtitle">
+        Thoughtfully crafted courses designed to help you grow —
+        at your own pace, on your own terms.
+      </p>
+      <a href="{{ '/courses/' | relative_url }}" class="btn btn--primary">
+        Browse Courses
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">Courses</h2>
+      <a href="{{ '/courses/' | relative_url }}" class="section__link">View all &rarr;</a>
+    </div>
+    <div class="courses-grid">
+      {% for course in site.courses limit: 3 %}
+        {% include course-card.html course=course %}
+      {% else %}
+        <div class="empty-state">
+          <h3>Courses coming soon</h3>
+          <p>New learning opportunities are on the way. Check back soon.</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
