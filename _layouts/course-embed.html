@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="embed-body">
+    <div class="embed-shell">
+      <header class="embed-bar">
+        <a href="{{ '/' | relative_url }}" class="embed-bar__logo">{{ site.title }}</a>
+        <span class="embed-bar__title">{{ page.title }}</span>
+        <a href="{{ '/courses/' | relative_url }}" class="embed-bar__back">&larr; Courses</a>
+      </header>
+      <iframe
+        class="embed-frame"
+        src="{{ page.rise_path | relative_url }}"
+        title="{{ page.title }}"
+        frameborder="0"
+        allowfullscreen
+        allow="fullscreen; autoplay; encrypted-media">
+      </iframe>
+    </div>
+  </body>
+</html>
