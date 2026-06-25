@@ -1,3 +1,13 @@
+---
+title: Calm Focus
+slug: calm-focus
+description: A scenario-based e-learning course on stress management for remote workers, built in Articulate Storyline 360.
+level: beginner
+excerpt: Follow Maya through a stressful week and discover practical strategies for managing stress, setting boundaries, and protecting your energy.
+layout: course-embed
+rise_path: /courses/calm-focus/course/story.html
+---
+
 # Calm Focus: Stress Management for Remote Workers
 
 ### A scenario-based e-learning course built in Articulate Storyline 360
@@ -12,7 +22,7 @@ Remote workers face a unique kind of stress — one that's easy to overlook beca
 
 **Duration:** Approximately 20 minutes
 
-**Demo:** [View the course](#) *(replace with your published link)*
+**Demo:** [View the course](#) *(https://amberknapp.com/courses/calm-focus/course/story.html)*
 
 ---
 
