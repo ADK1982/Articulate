@@ -27,6 +27,10 @@ defaults:
       type: "lessons"
     values:
       layout: lesson
+  - scope:
+      path: "courses/calm-focus/case-study"
+    values:
+      layout: page
 
 plugins:
   - jekyll-seo-tag
