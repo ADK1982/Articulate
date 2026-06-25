@@ -1,10 +1,16 @@
-\---
+\~\~\~
+
+yaml
+
+
 
 title: Calm Focus Case Study
 
 layout: page
 
-\---
+permalink: /courses/calm-focus/case-study/
+
+\~\~\~
 
 
 
@@ -155,6 +161,4 @@ A pre-course stress assessment to personalize Maya's starting scenario, and a ma
 
 
 \*Built as a portfolio piece demonstrating instructional design and Articulate Storyline 360 development skills.\*
-
-
 
