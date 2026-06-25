@@ -12,7 +12,7 @@ Remote workers face a unique kind of stress — one that's easy to overlook beca
 
 **Duration:** Approximately 20 minutes
 
-**Demo:** [View the course](#) *(replace with your published link)*
+**Demo:** [View the course] (https://amberknapp.com/courses/calm-focus/course/story.html)*
 
 ---
 
