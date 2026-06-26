@@ -22,7 +22,7 @@ College students face stress from multiple directions — academics, finances, r
 
 ## Tools and Skills
 
-- **Articulate Rise 360** — course development, interactive lessons, built-in assessments
+- **Articulate Rise 360** — course development, interactive lessons, drag-and-drop sorting, flashcards, accordion interactions, step-by-step carousels, knowledge checks
 - **Instructional design** — content sequencing, learner-centered design, scaffolded learning progression
 
 ---
@@ -33,31 +33,44 @@ College students face stress from multiple directions — academics, finances, r
 
 The course is deliberately structured to build understanding before asking learners to apply it. Early sections establish what stress is and how the body responds physiologically, so that by the time learners reach the stress management techniques, they have the context to evaluate them meaningfully — not just follow a list of tips.
 
+### Grounding content in college life
+
+Each interaction uses college-specific scenarios and examples rather than generic ones. The sorting activity asks learners to classify real college situations as eustress or distress; the stressor categories reflect the academic, social, financial, and family pressures students actually face. This keeps the content relevant and immediately recognizable.
+
 ### Ending with personal application
 
-Rather than closing with a summary, the final section guides learners to create their own stress management plan. The goal is for learners to leave with something they've built themselves, not just information they've consumed.
-
-### Using Rise interactions to engage
-
-Rise 360's built-in interaction types are used throughout to keep learners active rather than passive — moving through material by doing, not just reading.
+Rather than closing with a summary, the final section guides learners step by step through building their own stress management plan — reflecting on stressors, selecting healthy strategies, setting realistic goals, and identifying support resources. The goal is for learners to leave with something they've built themselves, not just information they've consumed.
 
 ---
 
 ## Course Structure
 
-| Section | Title |
-|---|---|
-| 1 | Understanding Stress: Definitions and Types |
-| 2 | General Adaptation Syndrome |
-| 3 | Personal Stressors and Mediators of the Stress Response |
-| 4 | Evaluating Stress Management Techniques |
-| 5 | Creating Your Personal Stress Management Plan |
+| Section | Title | Interaction Type |
+|---|---|---|
+| 1 | Understanding Stress: Definitions and Types | Drag-and-drop sorting (Eustress vs. Distress) |
+| 2 | The Science of Stress: General Adaptation Syndrome | Flashcard review (Alarm, Resistance, Exhaustion stages) |
+| 3 | Personal Stressors and Mediators of the Stress Response | Accordion expand/collapse + knowledge check |
+| 4 | Evaluating Stress Management Techniques | Step-by-step carousel |
+| 5 | Creating Your Personal Stress Management Plan | Guided accordion plan builder |
 
 ---
 
 ## Screenshots
 
-*(Screenshots coming soon)*
+![Course cover](/assets/img/mastering-stress/cover.png)
+*Course cover — bold visual design with orange branding*
+
+![Section 1 — Sorting Eustress and Distress](/assets/img/mastering-stress/section-1-sorting.png)
+*Section 1 — Drag-and-drop sorting: learners classify college scenarios as eustress or distress*
+
+![Section 2 — Flashcard key terms review](/assets/img/mastering-stress/section-2-flashcards.png)
+*Section 2 — Flashcards covering the stages of the General Adaptation Syndrome*
+
+![Section 3 — Exploring stressor categories](/assets/img/mastering-stress/section-3-stressors.png)
+*Section 3 — Accordion interaction exploring academic, social, financial, family, and personal stressors*
+
+![Section 5 — Personal stress management plan builder](/assets/img/mastering-stress/section-5-plan.png)
+*Section 5 — Step-by-step plan builder guiding learners from reflection to action*
 
 ---
 
