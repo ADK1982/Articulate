@@ -86,7 +86,7 @@ A pre-course stress assessment to personalize Maya's starting scenario, and a ma
 ## Supporting Documents
 
 - [Content Map](#) *(coming soon)*
-- [Storyboard](#) *(coming soon)*
+- [Storyboard](/courses/calm-focus/storyboard/)
 - [Job Aid](#) *(coming soon)*
 
 ---
