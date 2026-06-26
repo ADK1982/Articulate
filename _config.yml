@@ -28,7 +28,7 @@ defaults:
     values:
       layout: lesson
   - scope:
-      path: "courses/calm-focus/case-study"
+      path: "courses/calm-focus/project-background"
     values:
       layout: page
 

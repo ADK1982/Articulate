@@ -6,7 +6,7 @@ level: beginner
 excerpt: Follow Maya through a stressful week and discover practical strategies for managing stress, setting boundaries, and protecting your energy.
 layout: course-embed
 rise_path: /courses/calm-focus/course/story.html
-case_study: /courses/calm-focus/case-study/
+case_study: /courses/calm-focus/project-background/
 ---
 
 # Calm Focus: Stress Management for Remote Workers

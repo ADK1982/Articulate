@@ -1,7 +1,7 @@
 ---
-title: Calm Focus Case Study
+title: Calm Focus Project Background
 layout: page
-permalink: /courses/calm-focus/case-study/
+permalink: /courses/calm-focus/project-background/
 ---
 
 # Calm Focus: Stress Management for Remote Workers
@@ -91,6 +91,6 @@ A pre-course stress assessment to personalize Maya's starting scenario, and a ma
 
 ---
 
-[← Back to course](https://amberknapp.com/courses/calm-focus/)
+[← Back to course](/courses/calm-focus/)
 
 *Built as a portfolio piece demonstrating instructional design and Articulate Storyline 360 development skills.*
