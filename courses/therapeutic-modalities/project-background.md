@@ -69,6 +69,9 @@ The final module — Therapeutic Modalities for Tissue Healing: Evidence and Bes
 
 ## Screenshots
 
+![Course cover](/assets/img/therapeutic-modalities/cover.png)
+*Course cover — clinical imagery reflecting the hands-on nature of athletic training*
+
 ![Module 1 — Key contributions of therapeutic modalities](/assets/img/therapeutic-modalities/module-1-roles.png)
 *Module 1 — Accordion covering the five clinical roles of therapeutic modalities*
 
