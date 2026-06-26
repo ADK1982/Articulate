@@ -85,9 +85,23 @@ A pre-course stress assessment to personalize Maya's starting scenario, and a ma
 
 ## Supporting Documents
 
-- [Content Map](/courses/calm-focus/content-map/)
-- [Storyboard](/courses/calm-focus/storyboard/)
-- [Job Aid](/courses/calm-focus/job-aid/)
+<div class="doc-cards">
+  <a href="/courses/calm-focus/content-map/" class="doc-card">
+    <div class="doc-card__type">Document</div>
+    <div class="doc-card__title">Content Map</div>
+    <p class="doc-card__desc">Learning objectives and content alignment by section</p>
+  </a>
+  <a href="/courses/calm-focus/storyboard/" class="doc-card">
+    <div class="doc-card__type">Document</div>
+    <div class="doc-card__title">Storyboard</div>
+    <p class="doc-card__desc">Screen flow, interactions, and key design decisions</p>
+  </a>
+  <a href="/courses/calm-focus/job-aid/" class="doc-card">
+    <div class="doc-card__type">Document</div>
+    <div class="doc-card__title">Job Aid</div>
+    <p class="doc-card__desc">Printable quick reference for learners</p>
+  </a>
+</div>
 
 ---
 

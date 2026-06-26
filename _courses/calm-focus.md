@@ -7,6 +7,13 @@ excerpt: Follow Maya through a stressful week and discover practical strategies 
 layout: course-embed
 rise_path: /courses/calm-focus/course/story.html
 case_study: /courses/calm-focus/project-background/
+documents:
+  - title: Content Map
+    url: /courses/calm-focus/content-map/
+  - title: Storyboard
+    url: /courses/calm-focus/storyboard/
+  - title: Job Aid
+    url: /courses/calm-focus/job-aid/
 ---
 
 # Calm Focus: Stress Management for Remote Workers

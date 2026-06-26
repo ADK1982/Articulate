@@ -19,6 +19,13 @@
       </p>
     </div>
   </a>
+  {% if include.course.documents %}
+  <div class="course-card__docs">
+    {% for doc in include.course.documents %}
+      <a href="{{ doc.url | relative_url }}" class="course-card__doc-tag">{{ doc.title }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="course-card__footer">
     <div class="course-card__meta">
       {% if include.course.duration %}
