@@ -346,6 +346,53 @@
   margin: 0;
 }
 
+// ─── Contact Form ─────────────────────────────────────────────────────────────
+
+.contact-form {
+  margin-top: 1.5rem;
+}
+
+.contact-form__group {
+  margin-bottom: 1.25rem;
+}
+
+.contact-form__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $text-secondary;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form__input {
+  width: 100%;
+  background: $bg-elevated;
+  border: 1px solid $border-default;
+  border-radius: $radius-md;
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  font-family: $font-sans;
+  color: $text-primary;
+  transition: border-color $transition-fast;
+  outline: none;
+
+  &::placeholder { color: $text-muted; }
+
+  &:focus {
+    border-color: $accent;
+    box-shadow: 0 0 0 3px $accent-dim;
+  }
+}
+
+.contact-form__textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form__submit {
+  margin-top: 0.5rem;
+}
+
 // ─── Empty State ──────────────────────────────────────────────────────────────
 
 .empty-state {
