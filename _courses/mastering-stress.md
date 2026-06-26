@@ -7,4 +7,5 @@ image: /courses/mastering-stress/content/assets/ai-generated-image-1.jpg
 excerpt: Learn evidence-based techniques to take control of stress and build resilience that lasts.
 layout: course-embed
 rise_path: /courses/mastering-stress/content/index.html
+case_study: /courses/mastering-stress/project-background/
 ---
