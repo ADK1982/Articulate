@@ -1,21 +1,25 @@
-<a href="{{ include.course.url | relative_url }}" class="course-card">
-  <div class="course-card__image">
-    {% if include.course.image %}
-      <img src="{{ include.course.image | relative_url }}" alt="{{ include.course.title }}">
-    {% else %}
-      <div class="course-card__image-placeholder"></div>
-    {% endif %}
-    {% if include.course.level %}
-      <span class="badge badge--{{ include.course.level }} course-card__badge">
-        {{ include.course.level | capitalize }}
-      </span>
-    {% endif %}
-  </div>
-  <div class="course-card__body">
-    <h3 class="course-card__title">{{ include.course.title }}</h3>
-    <p class="course-card__excerpt">
-      {{ include.course.excerpt | default: include.course.description | truncate: 110 }}
-    </p>
+<div class="course-card">
+  <a href="{{ include.course.url | relative_url }}" class="course-card__main">
+    <div class="course-card__image">
+      {% if include.course.image %}
+        <img src="{{ include.course.image | relative_url }}" alt="{{ include.course.title }}">
+      {% else %}
+        <div class="course-card__image-placeholder"></div>
+      {% endif %}
+      {% if include.course.level %}
+        <span class="badge badge--{{ include.course.level }} course-card__badge">
+          {{ include.course.level | capitalize }}
+        </span>
+      {% endif %}
+    </div>
+    <div class="course-card__body">
+      <h3 class="course-card__title">{{ include.course.title }}</h3>
+      <p class="course-card__excerpt">
+        {{ include.course.excerpt | default: include.course.description | truncate: 110 }}
+      </p>
+    </div>
+  </a>
+  <div class="course-card__footer">
     <div class="course-card__meta">
       {% if include.course.duration %}
         <span class="meta-item">{{ include.course.duration }}</span>
@@ -25,5 +29,11 @@
         <span class="meta-item">{{ lesson_count }} lessons</span>
       {% endif %}
     </div>
+    <div class="course-card__actions">
+      <a href="{{ include.course.url | relative_url }}" class="course-card__action-link">View Course →</a>
+      {% if include.course.case_study %}
+        <a href="{{ include.course.case_study | relative_url }}" class="course-card__action-link course-card__action-link--muted">Case Study →</a>
+      {% endif %}
+    </div>
   </div>
-</a>
+</div>
