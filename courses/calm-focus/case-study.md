@@ -61,6 +61,22 @@ Building the multi-technique tracking in Section 2 required a combination of Tru
 
 ---
 
+## Screenshots
+
+![Section 1 — Click-to-reveal cards, unvisited state](/assets/img/calm-focus/section-1-cards.png)
+*Section 1 — Click-to-reveal cards before interaction*
+
+![Section 1 — All three techniques explored](/assets/img/calm-focus/section-1-visited.png)
+*Section 1 — Visited state after exploring all three options*
+
+![Section 3 — After-hours Slack notification scenario](/assets/img/calm-focus/section-3-slack.png)
+*Section 3 — Boundary dilemma: after-hours Slack message*
+
+![Section 3 — Drag-and-drop evening ritual builder](/assets/img/calm-focus/section-3-ritual-builder.png)
+*Section 3 — Learner builds their own evening ritual*
+
+---
+
 ## What I'd Add With More Time
 
 A pre-course stress assessment to personalize Maya's starting scenario, and a manager-facing version of the course focused on recognizing stress signals in remote direct reports.

@@ -253,6 +253,21 @@
       margin-bottom: 0.4rem;
     }
   }
+
+  img {
+    width: 100%;
+    border-radius: $radius-lg;
+    border: 1px solid $border-subtle;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  img + em {
+    display: block;
+    font-size: 0.825rem;
+    color: $text-muted;
+    font-style: normal;
+    margin-bottom: 2rem;
+  }
 }
 
 // ─── Course Header ────────────────────────────────────────────────────────────
