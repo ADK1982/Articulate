@@ -15,15 +15,29 @@ title: Home
       <a href="{{ '/courses/' | relative_url }}" class="btn btn--primary">
         Browse Courses
       </a>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-number">3</div>
+          <div class="hero__stat-label">Courses available</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number">20+</div>
+          <div class="hero__stat-label">Minutes per course</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-number">100%</div>
+          <div class="hero__stat-label">Self-paced</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="section__header">
-      <h2 class="section__title">Courses</h2>
-      <a href="{{ '/courses/' | relative_url }}" class="section__link">View all &rarr;</a>
+    <div class="section__header section__header--centered">
+      <h2 class="section__title">All Courses</h2>
+      <p class="section__subtitle">Browse the full catalog</p>
     </div>
     <div class="courses-grid">
       {% for course in site.courses limit: 3 %}
