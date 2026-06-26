@@ -7,4 +7,5 @@ image: /courses/therapeutic-modalities/content/assets/stock-image.jpg
 excerpt: A practical guide to the modalities used in athletic training — from theory to hands-on application.
 layout: course-embed
 rise_path: /courses/therapeutic-modalities/content/index.html
+case_study: /courses/therapeutic-modalities/project-background/
 ---
